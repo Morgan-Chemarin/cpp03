@@ -6,11 +6,11 @@
 /*   By: dev <dev@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/20 14:57:37 by dev               #+#    #+#             */
-/*   Updated: 2026/02/20 15:57:16 by dev              ###   ########.fr       */
+/*   Updated: 2026/02/20 16:04:25 by dev              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "../inc/ClapTrap.hpp"
 #include <iostream>
 
 int main(void)
