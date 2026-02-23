@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dev <dev@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: mchemari <mchemari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/20 17:58:38 by dev               #+#    #+#             */
-/*   Updated: 2026/02/20 19:20:39 by dev              ###   ########.fr       */
+/*   Updated: 2026/02/23 15:59:15 by mchemari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 ScavTrap::ScavTrap() : ClapTrap()
 {
+	std::cout << "Constructor called for ScavTrap " << this->_name << std::endl;
+
 	this->_hitPoints = 100;
 	this->_energyPoints = 50;
 	this->_attackDamage = 20;
-
-	std::cout << "Constructor called for ScavTrap " << this->_name << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 {
+	std::cout << "Constructor called for ScavTrap " << this->_name << std::endl;
+
 	this->_hitPoints = 100;
 	this->_energyPoints = 50;
 	this->_attackDamage = 20;
-
-	std::cout << "Constructor called for ScavTrap " << this->_name << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& other): ClapTrap(other)
@@ -37,10 +37,10 @@ ScavTrap::ScavTrap(const ScavTrap& other): ClapTrap(other)
 
 ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 {
+	std::cout << "Assignement operator called for ScavTrap " << this->_name << std::endl;
 	if (this != &other)
 		ClapTrap::operator=(other);
 		
-	std::cout << "Assignement operator called for ScavTrap " << this->_name << std::endl;
 	return *this;
 }
 
